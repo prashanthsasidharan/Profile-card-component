@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+body{
+    background-color:hsl(185, 75%, 39%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18;
+    color: hsl(229, 23%, 23%);
+
+    background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+    background-position: right calc(50vw - 5%) bottom 50vh,
+        left calc(50vw - 10%) top 50vh;
+    background-repeat: no-repeat;
+}
+
+.card{
+    height: 370px;
+    border-radius: 15px;
+    background-color: white;
+    text-align:center;
+    width:320px;
+}
+.card-top{
+    height:150px;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dp{
+    margin-top:-50px;
+}
+.dp img{
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    border: 5px solid white;
+}
+
+.person-personal-info{
+    padding:20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.person-details{
+    display:flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.person-details div div:last-child{
+    font-weight: 400;
+    font-size: 12;
+    color: hsl(227, 10%, 46%);
+    margin-top: 5px;
+}
+
+
+.person-personal-info span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+.person-personal-info div:last-child{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+      background-position: right calc(50vw + 15%) bottom 50vh,
+        left calc(50vw + 15%) top 50vh;
+    }
+  }
